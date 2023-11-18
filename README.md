@@ -1,4 +1,4 @@
-# npm-package-skeleton
+# twilio-subscription-context
 
 Skeleton of a simple NPM Package with Babel and CI already configured.
 
@@ -30,7 +30,7 @@ Skeleton of a simple NPM Package with Babel and CI already configured.
   ```sh
   mkdir my-project && cd my-project
   git init
-  git remote add skeleton https://github.com/amercier/npm-package-skeleton.git
+  git remote add skeleton https://github.com/yucadoo/twilio-subscription-context.git
   git remote set-url skeleton --push "Error: skeleton remote is read-only" # Disable pushing on skeleton
   git config remote.skeleton.tagOpt --no-tags # Disable fetching tags on skeleton
   git remote add origin <YOUR GIT REPOSITORY URL>
@@ -42,7 +42,7 @@ Skeleton of a simple NPM Package with Babel and CI already configured.
   **Warning:** this will erase all existing code and git
   history on master branch, use `git reflog` if you ever need to rollback.
   ```sh
-  git remote add skeleton https://github.com/amercier/npm-package-skeleton.git
+  git remote add skeleton https://github.com/yucadoo/twilio-subscription-context.git
   git remote set-url skeleton --push "Error: skeleton remote is read-only"
   git show-ref --verify --quiet refs/heads/master || git branch master # Create master branch if needed
   [[ refs/heads/master == $(git symbolic-ref --quiet HEAD) ]] || git checkout master # Switch to master branch
@@ -55,12 +55,12 @@ Skeleton of a simple NPM Package with Babel and CI already configured.
 
 3. Replace the following occurrences
 
-- [ ] `amercier/npm-package-skeleton` → _your repo slug_
-- [ ] `npm-package-skeleton` → _your project name_
-- [ ] `package-skeleton` → _your NPM package name_
-- [ ] `Alex Mercier` → _your name_
-- [ ] `pro.alexandre.mercier@gmail.com` → _your public email address_
-- [ ] `https://amercier.com` → _your website_
+- [ ] `yucadoo/twilio-subscription-context` → _your repo slug_
+- [ ] `twilio-subscription-context` → _your project name_
+- [ ] `twilio-subscription-context` → _your NPM package name_
+- [ ] `Hrvoje Jukic` → _your name_
+- [ ] `hrcajuka@gmail.com` → _your public email address_
+- [ ] `https://yucadoo.com` → _your website_
 
 4. Import project in CI tools:
 
@@ -99,42 +99,42 @@ This project is released under [ISC License](LICENSE.md).
 
 ## **Note:** the content after this is the actual package documentation (to be edited after cloning).
 
-# npm-package-skeleton
+# twilio-subscription-context
 
-[![Latest Stable Version](https://img.shields.io/npm/v/package-skeleton.svg)](https://www.npmjs.com/package/package-skeleton)
-[![Build Status](https://img.shields.io/travis/amercier/npm-package-skeleton/master.svg)](https://travis-ci.org/amercier/npm-package-skeleton)
-[![NPM Downloads](https://img.shields.io/npm/dm/package-skeleton.svg)](https://www.npmjs.com/package/package-skeleton)
+[![Latest Stable Version](https://img.shields.io/npm/v/twilio-subscription-context.svg)](https://www.npmjs.com/package/twilio-subscription-context)
+[![Build Status](https://img.shields.io/travis/yucadoo/twilio-subscription-context/master.svg)](https://travis-ci.org/yucadoo/twilio-subscription-context)
+[![NPM Downloads](https://img.shields.io/npm/dm/twilio-subscription-context.svg)](https://www.npmjs.com/package/twilio-subscription-context)
 
-[![dependencies Status](https://david-dm.org/amercier/npm-package-skeleton/status.svg)](https://david-dm.org/amercier/npm-package-skeleton)
-[![Test Coverage](https://img.shields.io/codecov/c/github/amercier/npm-package-skeleton/master.svg)](https://codecov.io/github/amercier/npm-package-skeleton?branch=master)
-[![API Documentation](https://doc.esdoc.org/github.com/amercier/npm-package-skeleton/badge.svg)](https://doc.esdoc.org/github.com/amercier/npm-package-skeleton/)
+[![dependencies Status](https://david-dm.org/yucadoo/twilio-subscription-context/status.svg)](https://david-dm.org/yucadoo/twilio-subscription-context)
+[![Test Coverage](https://img.shields.io/codecov/c/github/yucadoo/twilio-subscription-context/master.svg)](https://codecov.io/github/yucadoo/twilio-subscription-context?branch=master)
+[![API Documentation](https://doc.esdoc.org/github.com/yucadoo/twilio-subscription-context/badge.svg)](https://doc.esdoc.org/github.com/yucadoo/twilio-subscription-context/)
 
 ## Installation
 
 Prerequisites: [Node.js](https://nodejs.org/) 6+, **npm** 3+.
 
-    npm install --save package-skeleton
+    npm install --save twilio-subscription-context
 
 ## Usage
 
 ### ES5
 
-    var xxx = require('package-skeleton').default;
+    var xxx = require('twilio-subscription-context').default;
 
 ### ES2015+
 
-    import xxx from 'package-skeleton';
+    import xxx from 'twilio-subscription-context';
 
 ## Contributing
 
 Please refer to the [guidelines for contributing](./CONTRIBUTING.md).
 
-[![devDependencies Status](https://david-dm.org/amercier/npm-package-skeleton/dev-status.svg)](https://david-dm.org/amercier/npm-package-skeleton?type=dev)
+[![devDependencies Status](https://david-dm.org/yucadoo/twilio-subscription-context/dev-status.svg)](https://david-dm.org/yucadoo/twilio-subscription-context?type=dev)
 
 ## License
 
-[![License](https://img.shields.io/npm/l/package-skeleton.svg)](LICENSE.md)
+[![License](https://img.shields.io/npm/l/twilio-subscription-context.svg)](LICENSE.md)
 
 ---
 
-<sup>_Created with [npm-p&#97;ckage-skeleton](https://github.com/amercier/npm-package-skeleton)._</sup>
+<sup>_Created with [npm-p&#97;ckage-skeleton](https://github.com/yucadoo/twilio-subscription-context)._</sup>

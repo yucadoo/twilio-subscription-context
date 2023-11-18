@@ -1,13 +1,17 @@
 {
-  "name": "package-skeleton",
-  "version": "1.0.5",
-  "description": "Skeleton of a simple NPM Package with Babel and CI already configured.",
+  "name": "twilio-subscription-context",
+  "version": "1.0.0",
+  "description": "Tracks opt-in and opt-out in Twilio Serverless.",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/amercier/npm-package-skeleton"
+    "url": "https://github.com/yucadoo/twilio-subscription-context"
   },
-  "author": "Alex Mercier <pro.alexandre.mercier@gmail.com> (http://amercier.com)",
+  "bugs": {
+    "url": "https://github.com/yucadoo/twilio-subscription-context/issues"
+  },
+  "homepage": "https://github.com/yucadoo/twilio-subscription-context#readme",
+  "author": "Hrvoje Jukic",
   "engines": {
     "node": ">=6",
     "npm": ">=3"
@@ -31,19 +35,11 @@
   ],
   "main": "dist/index.js",
   "keywords": [
-    "package",
-    "skeleton",
-    "example",
-    "node",
-    "npm",
-    "babel",
-    "ci",
-    "code",
-    "codecov",
-    "coverage",
-    "eslint",
-    "gemnasium",
-    "jest"
+    "twilio",
+    "serverless",
+    "opt-in",
+    "opt-out",
+    "subscription"
   ],
   "dependencies": {},
   "devDependencies": {

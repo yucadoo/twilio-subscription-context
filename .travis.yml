@@ -17,16 +17,16 @@ script:
   - '[[ "$REPORT_COVERAGE" != true ]] || codecov'
 after_success: >
   if [ "$TRAVIS_PULL_REQUEST" = "false" ] && [ "$BUILD_DOCS" = "true" ]; then
-    bash <(curl -s https://gist.githubusercontent.com/amercier/9d41002c79ac8e9fbd36bc1815d934b1/raw/) amercier/npm-package-skeleton;
+    bash <(curl -s https://gist.githubusercontent.com/yucadoo/9d41002c79ac8e9fbd36bc1815d934b1/raw/) yucadoo/twilio-subscription-context;
   fi
 deploy:
   provider: npm
-  email: pro.alexandre.mercier@gmail.com
+  email: hrcajuka@gmail.com
   api_key: $NPM_AUTH_TOKEN
   skip_cleanup: true
   on:
     tags: true
-    repo: amercier/npm-package-skeleton # Prevents publishing on PRs
+    repo: yucadoo/twilio-subscription-context # Prevents publishing on PRs
     condition: $NPM_DEPLOY = true # Prevents publishing on each matrix build
 cache:
   directories:
