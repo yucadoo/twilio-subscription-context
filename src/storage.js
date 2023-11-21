@@ -48,13 +48,16 @@ export default class {
         }
       }
     }
-    itemContext.update({
-      data: {
-        isSubscribed,
-        wasSubscribed,
-        eventId,
-      },
-    });
+    const data = {
+      isSubscribed,
+      wasSubscribed,
+      eventId,
+    };
+    if (itemInstance) {
+      await itemContext.update({ data });
+    } else {
+      await this.syncMapContext.syncMapItems.create({ key: who, data });
+    }
     return {
       isSubscribed,
       wasSubscribed,
