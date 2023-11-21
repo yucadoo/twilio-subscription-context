@@ -38,24 +38,6 @@ npm install
 npm test
 ```
 
-```log
-> twilio-subscription-context@1.0.0 test ./twilio-subscription-context
-> jest
-
- PASS  specs/lib/index.spec.js
-  myModule
-    ✓ exists (4ms)
-    ✓ returns true
-
-Test Suites: 1 passed, 1 total
-Tests:       2 passed, 2 total
-Snapshots:   0 total
-Time:        0.558s, estimated 1s
-Ran all test suites.
-```
-
-**Note:** Use `npm test -- --coverage` to generate code coverage report in the `coverage` directory, and `open coverage/index.html` to view full HTML report.
-
 #### Step 4. Run tests (TDD mode)
 
 ```bash
@@ -71,10 +53,3 @@ npm lint
 ```
 
 **Note:** this is automatically run before the test suite by `npm test`, but not by `npm start`
-
-## Other commands
-
-| Command         | Description                                                                                                                                                                                                             |
-| --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `npm run doc`   | Generates API documentation in `esdoc` folder. Not expected to be run manually, since [ESDoc](https://esdoc.org/) hosting service runs it already.                                                                      |
-| `npm run build` | Transpile all files from `src` directory to `dist`, using [Babel](https://babeljs.io/). Not expected to be run manually, since it is automatically run before NPM packaging (`package.json`'s `prepublishOnly` script). |
