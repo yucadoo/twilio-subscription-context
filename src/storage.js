@@ -5,7 +5,14 @@ export default class {
 
   async isSbuscribed(who) {
     const itemContext = this.syncMapContext.syncMapItems.get(who);
-    const itemInstance = await itemContext.fetch();
+    let itemInstance;
+    try {
+      itemInstance = await itemContext.fetch();
+    } catch (error) {
+      if (!JSON.stringify(error).includes('not found')) {
+        throw error;
+      }
+    }
     if (itemInstance) {
       if (itemInstance.data) {
         if (itemInstance.data.isSubscribed === false) {
@@ -18,7 +25,14 @@ export default class {
 
   async setSubscriptionStatus(who, isSubscribed, eventId) {
     const itemContext = this.syncMapContext.syncMapItems.get(who);
-    const itemInstance = await itemContext.fetch();
+    let itemInstance;
+    try {
+      itemInstance = await itemContext.fetch();
+    } catch (error) {
+      if (!JSON.stringify(error).includes('not found')) {
+        throw error;
+      }
+    }
     let wasSubscribed = true;
     if (itemInstance) {
       if (itemInstance.data) {
