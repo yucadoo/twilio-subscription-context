@@ -7,7 +7,7 @@ import {
 } from './constants';
 
 export default class {
-  constuctor(options) {
+  constructor(options) {
     let optInKeywords;
     if (options.YUCADOO_TSC_OPT_IN_KEYWORDS) {
       if (typeof options.YUCADOO_TSC_OPT_IN_KEYWORDS === 'string') {

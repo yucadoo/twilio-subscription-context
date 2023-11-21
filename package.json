@@ -1,6 +1,6 @@
 {
   "name": "twilio-subscription-context",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tracks opt-in and opt-out in Twilio Serverless.",
   "license": "ISC",
   "repository": {
