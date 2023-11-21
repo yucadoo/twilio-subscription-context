@@ -49,9 +49,11 @@ export default class {
       }
     }
     itemContext.update({
-      isSubscribed,
-      wasSubscribed,
-      eventId,
+      data: {
+        isSubscribed,
+        wasSubscribed,
+        eventId,
+      },
     });
     return {
       isSubscribed,
