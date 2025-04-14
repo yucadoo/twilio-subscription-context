@@ -9,7 +9,8 @@ export default class {
     try {
       itemInstance = await itemContext.fetch();
     } catch (error) {
-      if (!JSON.stringify(error).includes('not found')) {
+      // ignore error due to item not existing
+      if (error.status !== 404) {
         throw error;
       }
     }
@@ -29,7 +30,8 @@ export default class {
     try {
       itemInstance = await itemContext.fetch();
     } catch (error) {
-      if (!JSON.stringify(error).includes('not found')) {
+      // ignore error due to item not existing
+      if (error.status !== 404) {
         throw error;
       }
     }
